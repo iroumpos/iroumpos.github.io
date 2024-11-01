@@ -348,3 +348,7 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Theme
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
