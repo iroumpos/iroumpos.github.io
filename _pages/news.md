@@ -11,5 +11,4 @@ redirect_from:
 
 News
 ======
-* 01/10/2024: Excited to start at Imdea Software Institue as Phd Student under supervision of
-Thaleia Dimitra Doudali
+* 01/10/2024: Excited to start at [Imdea Software Institue](https://link-url-here.org) as Phd Student under supervision of [Thaleia Dimitra Doudali](https://thaleia-dimitradoudali.github.io/)
