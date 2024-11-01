@@ -21,7 +21,7 @@ repository               : "iroumpos/iroumpos.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "giannis.roumpos.jpg"
   name             : "Giannis Roumpos"
   pronouns         : # example: "she/her"  
   bio              : "Phd Student at Imdea Software Institute"
