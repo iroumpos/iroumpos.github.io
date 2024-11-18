@@ -11,35 +11,34 @@ body {
 /* Container */
 .container {
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     margin: 20px auto;
     max-width: 1200px;
+    gap: 20px; /* Space between sections */
 }
 
 /* Left Section (Profile) */
 .left-section {
     flex: 1;
     max-width: 300px;
-    /* background: #fff; */
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
-    /* border-radius: 50%; */
-    border-radius: 10px 0 0 10px; /* Rounded on top-left and bottom-left corners */
-
     object-fit: cover;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .left-section h2 {
     font-size: 1.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .left-section p {
@@ -47,26 +46,27 @@ body {
     color: #555;
 }
 
-.contact p {
-    font-size: 0.9rem;
+/* Links Section */
+.links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Links Section in About Me */
-.links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: #0073e6;
-    text-decoration: none;
-    font-size: 1rem;
-    margin: 5px 0;
-    padding: 0; /* Remove background box effect */
-    transition: color 0.3s ease;
+.links a img {
+    width: 30px; /* Adjust size for icons */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.links a:hover img {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 /* Right Section (Content) */
 .right-section {
-    flex: 3;
+    flex: 2;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -103,4 +103,49 @@ body {
 
 .right-section ul li a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .profile-pic {
+        width: 120px; /* Reduce size for smaller screens */
+        height: 120px;
+    }
+
+    .left-section, .right-section {
+        max-width: 100%; /* Take full width on smaller screens */
+    }
+
+    .links a img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+
+    .profile-pic {
+        width: 100px; /* Further reduce size for very small screens */
+        height: 100px;
+    }
+
+    .right-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .right-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .links a img {
+        width: 20px; /* Smaller icons */
+        height: 20px;
+    }
 }
