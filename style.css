@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
     background: #f4f4f4;
     color: #333;
 }
@@ -10,20 +11,20 @@ body {
 /* Container */
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
-/* Left Section */
+/* Left Section (Profile) */
 .left-section {
-    flex: 1 1 40%;
-    text-align: center;
-    background: #ffffff;
+    flex: 1;
+    max-width: 300px;
+    background: #fff;
     padding: 20px;
-    margin-right: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    text-align: center;
 }
 
 .profile-pic {
@@ -31,22 +32,27 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .left-section h2 {
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
 .left-section p {
-    margin: 10px 0;
+    margin: 5px 0;
     color: #555;
+}
+
+.contact p {
+    font-size: 0.9rem;
 }
 
 .links a {
     display: inline-block;
-    margin: 5px 10px;
-    padding: 10px 20px;
+    margin: 5px 5px;
+    padding: 8px 12px;
     background: #0073e6;
     color: #fff;
     text-decoration: none;
@@ -58,22 +64,43 @@ body {
     background: #005bb5;
 }
 
-/* Right Section */
+/* Right Section (Content) */
 .right-section {
-    flex: 1 1 55%;
-    background: #ffffff;
+    flex: 3;
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .right-section h1 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.right-section h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
 }
 
 .right-section p {
     margin-bottom: 15px;
-    line-height: 1.6;
     color: #555;
+}
+
+.right-section ul {
+    padding-left: 20px;
+}
+
+.right-section ul li {
+    margin-bottom: 10px;
+}
+
+.right-section ul li a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.right-section ul li a:hover {
+    text-decoration: underline;
 }
