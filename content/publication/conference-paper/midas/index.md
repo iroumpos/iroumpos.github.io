@@ -6,7 +6,7 @@ title: 'Advancing Workload Management with Foundational Models: Challenges in Ti
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Tiemo Bang, Sergiy Matusevych,Yuanyuan Tian
-  - admin, Georgia Christofidi†, Thaleia Dimitra Doudali
+  - \textbf{Ioannis Roumpos}, Georgia Christofidi†, Thaleia Dimitra Doudali
 # Author notes (optional)
 # author_notes:
 #   - 'Equal contribution'
@@ -25,7 +25,7 @@ publication_types: ['workshop-paper-conference']
 
 # Publication name and optional abbreviated publication name.
 publication: In *Hugo Blox Builder Conference*
-publication_short: In *MIDAS workshop @ SIGMOD*
+publication_short: In *MIDAS workshop @ SIGMOD '25*
 
 abstract: ''
 
