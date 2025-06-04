@@ -5,8 +5,7 @@ title: 'Advancing Workload Management with Foundational Models: Challenges in Ti
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Tiemo Bang, Sergiy Matusevych,Yuanyuan Tian
-  - \textbf{Ioannis Roumpos}, Georgia Christofidi†, Thaleia Dimitra Doudali
+  - Tiemo Bang, Sergiy Matusevych,Yuanyuan Tian, **Ioannis Roumpos**, Georgia Christofidi†, Thaleia Dimitra Doudali
 # Author notes (optional)
 # author_notes:
 #   - 'Equal contribution'

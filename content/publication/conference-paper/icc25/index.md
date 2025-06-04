@@ -5,7 +5,7 @@ title: 'Edge to Cloud Service Placement based on Reinforcement Learning in 6G Ne
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Paris Flegkas, \textbf{Giannis Roumpos}, Vasilis Sourlas, Angelos Amditis
+  - Paris Flegkas, **Giannis Roumpos**, Vasilis Sourlas, Angelos Amditis
 # Author notes (optional)
 # author_notes:
 #   - 'Equal contribution'
