@@ -27,4 +27,5 @@ Contact: giannis.roumpos (at) imdea.org
 
 
 ## Links
-<a href=["https://discuss.systems/@xmal"](https://www.linkedin.com/in/giannis-roumpos-28a607198/) rel="me">Linkedin</a> 
+[Linkedin](https://www.linkedin.com/in/giannis-roumpos-28a607198/)
+[Github](https://github.com/iroumpos/)
