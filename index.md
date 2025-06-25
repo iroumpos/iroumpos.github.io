@@ -1,6 +1,6 @@
 # Giannis Roumpos
 
-![Giannis Roumpos Pic](https://github.com/iroumpos.github.io/index_picture.jpg)
+![Giannis Roumpos](https://iroumpos.github.io/index_picture.jpg)
 
 ## Short Bio 
 
