@@ -1,6 +1,6 @@
 # Giannis Roumpos
 
-![Giannis Roumpos](https://cbaquero.github.io/web/profile_pic.jpg)
+![Giannis Roumpos](https://github.com/iroumpos/iroumpos.github.io/blob/main/profile_pic.jpg)
 
 ## Short Bio 
 
