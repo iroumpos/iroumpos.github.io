@@ -15,7 +15,7 @@ Contact: giannis.roumpos (at) imdea.org
 
 ## Publications
 
-* [Advancing Workload Management with Foundational Models: Challenges in Time Series Similarity and Interpretability](). Tiemo Bang, Sergiy Matusevych,Yuanyuan Tian, **Ioannis Roumpos**, Georgia Christofidi, Thaleia Dimitra Doudali. MIDAS workshop @ SIGMOD 2025.
+* [Advancing Workload Management with Foundational Models: Challenges in Time Series Similarity and Interpretability](https://drive.google.com/file/d/1dhHCCrO6SecRCz7Dg5kKYKAQEPlENMg1/view). Tiemo Bang, **Ioannis Roumpos**, Sergiy Matusevych, Georgia Christofidi, Yuanyuan Tian,  Thaleia Dimitra Doudali. MIDAS workshop @ SIGMOD 2025.
 * [Edge to Cloud Service Placement based on Reinforcement Learning in 6G Networks](). Paris Flegkas, **Giannis Roumpos**, Vasilis Sourlas, Angelos Amditis. ICC 2025
 
 
