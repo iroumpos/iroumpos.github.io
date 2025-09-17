@@ -1,10 +1,10 @@
 # Giannis Roumpos
 
-![Giannis Roumpos](https://iroumpos.github.io/index_picture_new.jpg)
+![](https://iroumpos.github.io/index_picture_new.jpg)
 
 ## Short Bio 
 
-I am a first year Phd Student in [IMDEA Software Institute](https://software.imdea.org/) supervised by [Thaleia Dimitra Doudali](https://thaleia-dimitradoudali.github.io/) working on ML for Systems.
+I am a second year Phd Student in [IMDEA Software Institute](https://software.imdea.org/) supervised by [Thaleia Dimitra Doudali](https://thaleia-dimitradoudali.github.io/) working on ML for Systems.
 Previously, i received my MSc in [Electrical and Computer Engineering](https://www.e-ce.uth.gr/) from [University of Thessaly](https://www.uth.gr/en) where i did my diploma thesis on [Resource Management on Computing Continuum]()
 
 My research interests include Cloud Computing and Systems for ML
