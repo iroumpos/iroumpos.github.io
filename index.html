@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giannis Roumpos</title>
+  <meta name="description" content="PhD student at IMDEA Software Institute working on ML for Systems.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root {
+      --text: #494e52;
+      --muted: #7a8288;
+      --heading: #313436;
+      --link: #52adc8;
+      --link-hover: #2f8aa5;
+      --border: #f2f3f3;
+      --bg: #ffffff;
+      --masthead-border: #f2f3f3;
+      --footer-bg: #fafafa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #c9cdd1;
+        --muted: #9aa1a7;
+        --heading: #eef0f2;
+        --link: #6fc3dc;
+        --link-hover: #9ad6e8;
+        --border: #2c3135;
+        --bg: #1b1e21;
+        --masthead-border: #2c3135;
+        --footer-bg: #212528;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { font-size: 16px; }
+    @media (min-width: 1024px) { html { font-size: 17px; } }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+                   "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+      line-height: 1.5;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { color: var(--link-hover); text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+    /* ---------- Masthead (top nav) ---------- */
+    .masthead {
+      border-bottom: 1px solid var(--masthead-border);
+      position: sticky; top: 0; z-index: 10;
+      background: var(--bg);
+    }
+    .masthead nav {
+      max-width: 1280px; margin: 0 auto;
+      padding: 0.9em 1.5em;
+      display: flex; flex-wrap: wrap; gap: 0.4em 1.6em; align-items: center;
+    }
+    .masthead a { color: var(--muted); font-size: 0.95em; }
+    .masthead a.site-title { color: var(--heading); font-weight: 700; margin-right: auto; }
+    .masthead a:hover { color: var(--heading); text-decoration: none; }
+
+    /* ---------- Layout ---------- */
+    .layout {
+      max-width: 1280px; margin: 2em auto 0;
+      padding: 0 1.5em;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2em;
+    }
+    @media (min-width: 925px) {
+      .layout { grid-template-columns: 240px minmax(0, 1fr); gap: 3em; }
+      .sidebar { position: sticky; top: 5em; align-self: start; }
+    }
+
+    /* ---------- Sidebar / author profile ---------- */
+    .sidebar { font-size: 0.85em; }
+    .author-avatar img {
+      width: 175px; height: 175px; max-width: 100%;
+      border-radius: 50%; object-fit: cover;
+      border: 1px solid var(--border);
+    }
+    .author-name { margin: 0.6em 0 0.1em; font-size: 1.3em; color: var(--heading); }
+    .author-bio { margin: 0 0 1em; color: var(--muted); }
+    .author-links { list-style: none; margin: 0; padding: 0; }
+    .author-links li { padding: 0.15em 0; }
+    .author-links a, .author-links span { color: var(--text); }
+    .author-links a:hover { color: var(--link); text-decoration: none; }
+    .author-links i { width: 1.3em; text-align: center; margin-right: 0.4em; color: var(--muted); }
+
+    @media (max-width: 924px) {
+      .sidebar { display: flex; gap: 1.2em; align-items: center; flex-wrap: wrap;
+                 border-bottom: 1px solid var(--border); padding-bottom: 1.2em; }
+      .author-avatar img { width: 100px; height: 100px; }
+    }
+
+    /* ---------- Main content ---------- */
+    .page { max-width: 50em; }
+    .page h1 { display: none; } /* name already shown in sidebar, like AcademicPages */
+    .page h2 {
+      color: var(--heading);
+      font-size: 1.3em;
+      margin: 1.8em 0 0.6em;
+      padding-bottom: 0.4em;
+      border-bottom: 1px solid var(--border);
+    }
+    .page h2:first-of-type { margin-top: 0; }
+    .page p, .page li { font-size: 1em; }
+    .page ul { padding-left: 1.3em; }
+    .page li { margin-bottom: 0.5em; }
+    .venue { color: var(--muted); font-style: italic; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      margin-top: 3em;
+      background: var(--footer-bg);
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.75em;
+      padding: 1.5em;
+      text-align: center;
+    }
+    footer .follow a { margin: 0 0.6em; color: var(--muted); }
+    footer .follow a:hover { color: var(--link); }
+  </style>
+</head>
+<body>
+
+  <header class="masthead">
+    <nav aria-label="Main">
+      <a class="site-title" href="/">Giannis Roumpos</a>
+      <a href="#bio">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#service">Service</a>
+      <a href="https://scholar.google.com/citations?user=_X8TkssAAAAJ&hl=en">Scholar</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="author-avatar">
+        <img src="index_picture_new.jpg" alt="Giannis Roumpos">
+      </div>
+      <div>
+        <h3 class="author-name">Giannis Roumpos</h3>
+        <p class="author-bio">PhD Student</p>
+        <ul class="author-links">
+          <li><i class="fa-solid fa-building-columns"></i><a href="https://software.imdea.org/">IMDEA Software Institute</a></li>
+          <li><i class="fa-solid fa-location-dot"></i><span>Madrid, Spain</span></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:giannis.roumpos@imdea.org">Email</a></li>
+          <li><i class="fa-solid fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=_X8TkssAAAAJ&hl=en">Google Scholar</a></li>
+          <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/giannis-roumpos-28a607198/">LinkedIn</a></li>
+          <li><i class="fa-brands fa-github"></i><a href="https://github.com/iroumpos/">GitHub</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="page">
+      <h1>Giannis Roumpos</h1>
+
+      <h2 id="bio">About me</h2>
+      <p>
+        I am a second-year PhD student at the
+        <a href="https://software.imdea.org/">IMDEA Software Institute</a>, supervised by
+        <a href="https://thaleia-dimitradoudali.github.io/">Thaleia Dimitra Doudali</a>,
+        working on ML for Systems.
+      </p>
+      <p>
+        Previously, I received my MSc in
+        <a href="https://www.e-ce.uth.gr/">Electrical and Computer Engineering</a> from the
+        <a href="https://www.uth.gr/en">University of Thessaly</a>, where I did my diploma thesis on
+        <a href="#">Resource Management on the Computing Continuum</a>.
+      </p>
+      <p>My research interests include <strong>cloud computing</strong> and <strong>systems for ML</strong>.</p>
+      <p>Contact: giannis.roumpos (at) imdea.org</p>
+
+      <h2 id="publications">📄 Publications</h2>
+      <ul>
+        <li>
+          <a href="https://dl.acm.org/doi/pdf/10.1145/3737412.3743491">Advancing Workload Management with Foundational Models: Challenges in Time Series Similarity and Interpretability</a>.<br>
+          Tiemo Bang, <strong>Ioannis Roumpos</strong>, Sergiy Matusevych, Georgia Christofidi, Yuanyuan Tian, Thaleia Dimitra Doudali.<br>
+          <span class="venue">MIDAS Workshop @ SIGMOD 2025</span>
+        </li>
+        <li>
+          <a href="https://ieeexplore.ieee.org/abstract/document/11161581">Edge to Cloud Service Placement based on Reinforcement Learning in 6G Networks</a>.<br>
+          Paris Flegkas, <strong>Giannis Roumpos</strong>, Vasilis Sourlas, Angelos Amditis.<br>
+          <span class="venue">ICC 2025</span>
+        </li>
+      </ul>
+
+      <h2 id="service">Service</h2>
+      <ul>
+        <li><strong>EuroSys 2026</strong> Shadow PC Member</li>
+        <li><strong>EuroSys 2025</strong>, <strong>SOSP 2025</strong>, <strong>ATC 2025</strong>, <strong>MLSys 2025</strong> Artifact Evaluation Committee</li>
+      </ul>
+    </main>
+  </div>
+
+  <footer>
+    <div class="follow">
+      <strong>Follow:</strong>
+      <a href="https://github.com/iroumpos/"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/giannis-roumpos-28a607198/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+    <p>&copy; 2026 Giannis Roumpos. Hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
